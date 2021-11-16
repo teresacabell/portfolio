@@ -160,7 +160,7 @@
   
   .intro p {
     line-height: 1.7;
-    color: #39a6b2;
+    color: var(--secondary-color);
     width: 80%;
     margin: 0 auto;
     font-size: 20px;
@@ -239,8 +239,8 @@
   .trainer {
     margin: 20px;
     flex: 1;
-    background: #024e76;
-    color: #fce138;
+    background: var(--primary-color);
+    color: var(--tertiary-color);
   }
   
   .trainer img {
@@ -269,11 +269,11 @@
   
   /* REACH OUT STYLES START */
   .contact {
-    background: #024e76;
+    background: var(--tertiary-color);
   }
   
   .contact h2 {
-    color: #fce138;
+    color: var(--primary-color);
   }
   
   .contact-info {
@@ -292,11 +292,11 @@
   }
   
   .contact-info div {
-    color: white;
+    color: #bb2020;
   }
   
   .contact-info h3 {
-    color: #fce138;
+    color: var(--primary-color);
     font-size: 32px;
   }
   
@@ -307,42 +307,8 @@
     font-style: normal;
   }
   
-  .contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
-  }
-  
-  .contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;
-  }
-  
-  .contact-form button {
-    width: 100%;
-    border: none;
-    background: #fce138;
-    color: #024e76;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-  
-  .contact-form button:hover {
-    color: #fce138;
-    background: #39a6b2;
-  }
-  
-  .contact-info a {
-    color: #fce138;
+
+
   }
   /* REACH OUT STYLES END */
   
@@ -403,9 +369,6 @@
       flex: 0 70%;
     }
     
-    .contact-info iframe{
-      flex: 1 100%;
-    }
   }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -459,71 +422,7 @@
       flex: 0 100%;
     }
   
-    .contact-info {
-      text-align: center;
-    }
-  
-    .contact-info > * {
-      flex: 0 100%;
-    }
-  
-    .contact-form {
-      order: 3;
+
     }
   }
 
-  .checkbox-wrapper label, .radio-wrapper label {
-      position: relative;
-      left: 10px;
-      margin: 10px;
-      line-height: 1.6;
-  }
-
-  .checkbox-wrapper label::before, .radio-wrapper label::before {
-      content: "";
-      height: 20px;
-      width: 20px;
-      background: rgba(255, 255, 255, 0.75);
-      border: 1px solid #024e76;
-      position: absolute;
-      top: -4px;
-      left: -30px;
-  }
-
-  .radio-wrapper label::before {
-      border-radius: 50%;
-  }
-
-  .radio-wrapper label::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #024e76;
-    position: absolute;
-    left: -29px;
-    top: -3px;
-    background-image: radial-gradient(circle, #39a6b2, #024e76);
-  }
-  
-  .checkbox-wrapper label::after {
-    content: "";
-    height: 6px;
-    width: 14px;
-    border-left: 2px solid #024e76;
-    border-bottom: 2px solid #024e76;
-    position: absolute;
-    left: -26px;
-    top: 1px;
-    transform: rotate(-58deg);
-  }
-
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
-  content: none;
-}
-
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
-  content: "";
-}
