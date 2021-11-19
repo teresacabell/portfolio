@@ -3,7 +3,8 @@
     --secondary-color: #eb6859;
     --tertiary-color: #fc7174;
   }
-  
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +13,7 @@
   
   body {
     color: var(--secondary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Monoton, sans-serif"
   }
   
   
@@ -27,7 +28,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../assets/css/images/sunrise.jpeg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -107,7 +108,7 @@
   
   /* HERO STYLES START */
   .hero {
-    background-image: url('../images/hero-bg.jpg');
+    background-image: url('../images/sunrise.png');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -118,7 +119,7 @@
   }
   
   .hero-cta {
-    width: 35%;
+    width: 4s5%;
     text-align: right;
     margin: 3.5%;
     color: #fff;
@@ -127,12 +128,12 @@
   }
   
   .hero-cta h2 {
-    font-style: italic;
+    font-style: Arial;
     font-size: 55px;
     color: var(--secondary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  } 
+
   /* HERO STYLES END */
   
   
@@ -140,15 +141,25 @@
   .section-title {
     font-size: 48px;
     border-bottom: 3px solid;
-    color: #024e76;
+    color: var(--secondary-color);
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
-  }
+  } 
   
+  .left-side-header {
+    width: 25%;
+    text-align: center;
+    align-self: center;
+  }
+
+ #work {
+    display: flex;
+  }
+
   .primary-border {
-    border-color: #fce138;
+    border-color: var(--primary-color);
   }
   
   .secondary-border {
@@ -214,11 +225,7 @@
   .step-text {
     flex: 12;
   }
-  
-  .step-text p {
-    color: #39a6b2;
-    font-size: 18px;
-  }
+
   
   .step-text h4 {
     font-size: 26px;
@@ -227,8 +234,8 @@
   }
   /* WHAT YOU DO STYLES END */
   
-  /* MEET THE TRAINERS START */
-  .trainers {
+  /* WORK START */
+  .work {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -236,36 +243,33 @@
     justify-content: space-around;
   }
   
-  .trainer {
-    margin: 20px;
-    flex: 1;
+  .run-buddy {
+    flex: 1; 
+    position: relative;
     background: var(--primary-color);
     color: var(--tertiary-color);
   }
-  
-  .trainer img {
+
+  .run-buddy-info {
+    background-color: royalblue;
     width: 100%;
+    bottom: 20px;
+    position: absolute;
+    height: 25px;
+  }
+
+  .run-buddy img {
+    width: 100%;
+    opacity: 40%;
+  }
+
+  .project-one, 
+  .project-two {
+    display: flex;
+    flex-wrap: wrap;
   }
   
-  .trainer-bio {
-    padding: 25px;
-    line-height: 1.3;
-  }
-  
-  .trainer-bio h3 {
-    font-size: 28px;
-  }
-  
-  .trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  
-  .trainer-bio p {
-    font-size: 17px;
-  }
-  /* TRAINER STYLES END */
+  /* WORK STYLES END */
   
   /* REACH OUT STYLES START */
   .contact {
@@ -274,6 +278,8 @@
   
   .contact h2 {
     color: var(--primary-color);
+    text-align: center;
+    font-size: 30px;
   }
   
   .contact-info {
@@ -284,7 +290,7 @@
   
   .contact-info > * {
     flex: 1;
-    margin: 15px;
+    margin: 10px;
   }
   
   .contact-info iframe {
@@ -295,16 +301,12 @@
     color: #bb2020;
   }
   
-  .contact-info h3 {
-    color: var(--primary-color);
-    font-size: 32px;
-  }
-  
   .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
+    text-align: center;
   }
   
 
@@ -321,9 +323,9 @@
     text-align: right;
   }
   
-  .flex-row {
+  /* .flex-row {
     display: flex;
-  }
+  } */
   
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
