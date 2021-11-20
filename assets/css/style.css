@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #fdbb63;
+    --primary-color: #49bfee;
     --secondary-color: #eb6859;
-    --tertiary-color: #fc7174;
+    --tertiary-color: #a3067c;
   }
 
 
@@ -21,14 +21,13 @@
   
   header {
     padding: 20px 35px;
-    background-color: var(--secondary-color) ;
+    background-color: var(--primary-color) ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../assets/css/images/sunrise.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -39,13 +38,13 @@
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   header a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
   }
   
   header nav {
@@ -77,43 +76,11 @@
   /* HEADER / NAVBAR STYLES END */
   
  
-  /* END FOOTER STYLES */
   
   /* STYLE ALL SECTION TAGS */
   section {
     padding: 60px;
   }
-  
-  /* HERO STYLES START */
-  .hero {
-    background-image: url('../images/sunrise.png');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-  }
-  
-  .hero-cta {
-    width: 4s5%;
-    text-align: right;
-    margin: 3.5%;
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-  
-  .hero-cta h2 {
-    font-style: Arial;
-    font-size: 55px;
-    color: var(--secondary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
-  /* HERO STYLES END */
-  
   
   /* SECTION TITLE STYLES START */
   .section-title {
@@ -134,18 +101,12 @@
 
  #work {
     display: flex;
+    flex-direction: column;
   }
 
   .primary-border {
     border-color: var(--primary-color);
   }
-  
-  .secondary-border {
-    border-color: #39a6b2;
-  }
-  /* SECTION TITLE STYLES END */
-  
-  /* WHAT WE DO STYLES */
   
   .intro p {
     line-height: 1.7;
@@ -154,6 +115,14 @@
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
+    float: right;
+  }
+  
+  .intro img {
+    width: 25%;
+    float: left;
+    object-fit: contain;
+    display: flex;
   }
   
   /* WORK START */
@@ -168,12 +137,11 @@
   .run-buddy {
     flex: 1; 
     position: relative;
-    background: var(--primary-color);
     color: var(--tertiary-color);
   }
 
   .run-buddy-info {
-    background-color: royalblue;
+    background-color: var(--primary-color);
     width: 100%;
     bottom: 20px;
     position: absolute;
@@ -182,34 +150,19 @@
 
   .run-buddy img {
     width: 100%;
-    opacity: 40%;
+    opacity: 70%;
   }
-
-  .project-one, 
-  .project-two {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center; 
-    float: left;
-  }
-
-  .project-one img,
-  .project-two img {
-    width: 100%;
-  }
-
-
 
 
   /* WORK STYLES END */
   
   /* REACH OUT STYLES START */
   .contact {
-    background: var(--tertiary-color);
+    background: var(--primary-color);
   }
   
   .contact h2 {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     text-align: center;
     font-size: 30px;
   }
@@ -255,9 +208,9 @@
     text-align: right;
   }
   
-  /* .flex-row {
+  .flex-row {
     display: flex;
-  } */
+  }
   
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
@@ -280,14 +233,6 @@
   
     header nav ul li a {
       font-size: 20px;
-    }
-  
-    .hero-cta, .hero-form {
-      width: 100%;
-    }
-    
-    .hero-cta {
-      text-align: right;
     }
   
     .section-title {
