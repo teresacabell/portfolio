@@ -1,7 +1,6 @@
 :root {
     --primary-color: #49bfee;
-    --secondary-color: #eb6859;
-    --tertiary-color: #a3067c;
+    --secondary-color: #f061cc;
   }
 
 
@@ -13,7 +12,6 @@
   
   body {
     color: var(--secondary-color);
-    font-family: "Monoton, sans-serif"
   }
   
   
@@ -38,13 +36,13 @@
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   header a {
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
   }
   
   header nav {
@@ -67,8 +65,8 @@
   }
   
   header nav ul li a:hover {
-    background: var(--tertiary-color);
-    color: var(--tertiary-color);
+    background: var(--secondary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
   }
