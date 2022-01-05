@@ -132,13 +132,15 @@
     justify-content: space-around;
   }
   
-  .run-buddy {
+  .run-buddy, 
+  .weather {
     flex: 1; 
     position: relative;
     color: var(--tertiary-color);
   }
 
-  .run-buddy-info {
+  .run-buddy-info,
+  .weather-info {
     background-color: var(--primary-color);
     width: 100%;
     bottom: 20px;
@@ -146,7 +148,8 @@
     height: 25px;
   }
 
-  .run-buddy img {
+  .run-buddy img,
+  .weather img {
     width: 100%;
     opacity: 70%;
   }
