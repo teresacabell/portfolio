@@ -133,14 +133,16 @@
   }
   
   .run-buddy, 
-  .weather {
+  .weather, 
+  .drinks {
     flex: 1; 
     position: relative;
     color: var(--tertiary-color);
   }
 
   .run-buddy-info,
-  .weather-info {
+  .weather-info, 
+  .drinks-info {
     background-color: var(--primary-color);
     width: 100%;
     bottom: 20px;
@@ -149,7 +151,8 @@
   }
 
   .run-buddy img,
-  .weather img {
+  .weather img, 
+  .drinks img {
     width: 100%;
     opacity: 70%;
   }
@@ -197,7 +200,7 @@
   
 
 
-  }
+  
   /* REACH OUT STYLES END */
   
   /* UTILITIES */
